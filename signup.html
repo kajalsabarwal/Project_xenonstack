@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signup.css">
+    <title>Sign Up</title>
+</head>
+<body>
+    <header class="greeting-header">
+        <p>Welcome to Car Dealership!</p>
+        <p>Become a member and experience exclusive benefits.</p>
+    </header>
+
+    <div class="signup-container">
+        <div class="signup-title">SIGN UP</div>
+        <form class="signup-form" id="signupForm" action="SignUpServlet" method="post">
+            
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="text" id="dob" placeholder="DOB" required>
+            <input type="text" id="contact" placeholder="Contact" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <label>
+                <input type="checkbox" required> I agree to the terms and conditions
+            </label>
+            <button type="button" onclick="submitForm()">Sign Up</button>
+
+    
+        </form>
+
+        <!-- Include this script at the end of your HTML file -->
+            <script src="server.js"></script>
+            
+    </div>
+</body>
+</html>

@@ -1,0 +1,184 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+
+}
+
+.navbar {
+    background-color: navy;
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    padding: 0.5em;
+}
+
+.logo img {
+    max-width: 400px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0.5em 1em;
+    margin: 0 0.5em;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+section {
+    padding: 1em;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    height:30px;
+    width: 100%;
+
+}
+
+/* Additional Styling for Login/Logout Button */
+nav #login {
+    background-color: #5bc0de; /* Bootstrap's info color for login */
+}
+
+/* Responsive Styling */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar nav {
+        margin-top: 0.5em;
+    }
+
+    nav a {
+        margin: 0.5em 0;
+    }
+}
+
+/* Styles for login.html */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 1em;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+form input {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    box-sizing: border-box;
+}
+
+form button {
+    background-color: #5bc0de; /* Bootstrap's info color for login */
+    color: #fff;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #4cae4c; /* Bootstrap's success color on hover */
+}
+
+/* Styles for signup.html */
+body {
+    background-image: url('background-image.jpg'); /* replace with the path to your background image */
+    background-size: cover;
+    color: #fff;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 1em;
+    border-radius: 5px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+form input {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    box-sizing: border-box;
+}
+
+form button {
+    background-color: #5bc0de; /* Bootstrap's info color for signup */
+    color: #fff;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #4cae4c; /* Bootstrap's success color on hover */
+}
+
+/* Styles for old-cars.html, new-cars.html, accessories.html, insurance.html */
+.listings {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1em;
+}
+
+.listing {
+    border: 1px solid #ddd;
+    padding: 1em;
+    margin: 1em;
+    text-align: center;
+}
+
+.listing img {
+    max-width: 100%;
+}
+
+.listings.old-cars {
+    background-color: #f8f8f8;
+}
+
+.listings.new-cars {
+    background-color: #f0f0f0;
+}
+
+.listings.accessories {
+    background-color: #e8e8e8;
+}
+
+.listings.insurance {
+    background-color: #e0e0e0;
+}
